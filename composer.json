@@ -1,0 +1,23 @@
+{
+  "name": "app/laundry",
+  "description": "Syifa Laundry App",
+  "type": "project",
+  "require": {
+    "composer/composer": "^2.6",
+    "phpmailer/phpmailer": "^6.9",
+    "pusher/pusher-php-server": "^7.2",
+    "mpdf/mpdf": "^8.1.2",
+    "nesbot/carbon": "^2.72"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Laundry\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Angeom21",
+      "email": "93632225+ANGEOM21@users.noreply.github.com"
+    }
+  ]
+}

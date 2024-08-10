@@ -1,0 +1,666 @@
+/* ******  admin  ****** */
+/* topbar */
+.topbar-admin {
+  background-color: var(--primary1);
+  padding: 10px 30px;
+  color: var(--light1);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.13);
+  display: flex;
+  justify-content: space-between;
+}
+.topbar-admin-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.topbar-admin .topbar-logo h2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-size: 24px;
+  font-family: "Rancho";
+  letter-spacing: 1px;
+  color: var(--light1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.topbar-admin .topbar-logo svg {
+  color: var(--light1);
+  width: 20px;
+  margin: 0px 10px 0px 0px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+}
+/* sidebar admin */
+.sidebar-admin {
+  background-color: var(--primary1);
+  width: 210px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 1;
+  display: flex;
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.sidebar-admin .list-items-admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 80px 0px;
+}
+.sidebar-admin .list-items-admin .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 2px double var(--gray1); */
+  width: 100%;
+}
+.sidebar-admin a {
+  display: block;
+  text-decoration: none;
+  color: var(--gray1);
+  padding: 20px 3px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 15px;
+}
+.sidebar-admin img {
+  margin-right: 5px;
+}
+.sidebar-admin a img {
+  margin-right: 5px;
+  filter: brightness(50);
+}
+.sidebar-admin a img:hover {
+  margin-right: 5px;
+  filter: brightness(200);
+}
+.sidebar-admin a:hover,
+.sidebar-admin a.active,
+.sidebar-admin a:focus {
+  color: var(--light1);
+}
+.sidebar-admin a:hover {
+  color: var(--light1);
+}
+.content-admin {
+  margin-left: 200px;
+  padding: 65px 0px;
+  z-index: -9999;
+  transition: 0.5s;
+}
+/* form edit */
+#form-admin .btn-admin {
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--dark1);
+  background: var(--gray2);
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 50px var(--gray2);
+  transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+  border: 2px solid var(--gray2);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.13);
+  outline: none;
+}
+#form-admin .btn-admin:focus {
+  box-shadow: none;
+  outline: 2px double var(--primary1);
+}
+#form-admin .btn-admin:hover {
+  color: var(--dark2);
+  background: var(--gray1);
+  box-shadow: inset 0 0 0 0 var(--gray1);
+}
+.btn-admin-1 {
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--dark1);
+  border-radius: 8px;
+  background-color: var(--light1);
+  box-shadow: inset 0 0 0 50px var(--gray2);
+  transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+  border: 2px solid var(--gray2);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.13);
+}
+.btn-admin-1:focus {
+  box-shadow: none;
+  outline: 2px double var(--primary1);
+}
+.btn-admin-1:hover {
+  color: var(--dark2);
+  box-shadow: inset 0 0 0 0 var(--gray1);
+}
+/* form */
+#form-admin .form-group input {
+  border: 2px solid var(--gray2);
+  padding: 15px 10px;
+}
+#form-admin label {
+  font-weight: 600;
+}
+.img-profile {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--gray2);
+  align-items: flex-end;
+  color: var(--dark1);
+}
+/* logout */
+.logout-parrent {
+  padding: 80px 10px;
+}
+.logout {
+  padding: 5px;
+  margin: 20px 5px;
+  border-bottom: 2px solid var(--dark2);
+  font-weight: 600;
+  font-size: 18px;
+}
+/* button edit */
+.button {
+  display: flex;
+}
+/* judul pages */
+.judul-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 50px;
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.13);
+  margin-bottom: 20px;
+  top: 0;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+}
+.judul-page .page {
+  font-size: 24px;
+  color: var(--dark1);
+  opacity: 80%;
+  margin-left: 10px;
+}
+/* content banner */
+.bg-banner {
+  background-color: var(--primary1);
+  gap: 10px;
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+/* custom dropdown */
+.sidebar-admin .dropdown a i {
+  transition: 0.3s;
+}
+.sidebar-admin .dropdown-menu {
+  position: relative;
+  top: 60px;
+}
+.sidebar-admin .dropdown-menu.show {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+.sidebar-admin .dropdown-menu.show a {
+  color: var(--light1);
+  padding: 5px 12px;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.sidebar-admin .dropdown-menu.show a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* tabel Customer */
+.tipe-pesan {
+  font-size: 15px;
+  background-color: #caf8ca;
+  border-radius: 3px;
+  font-weight: 500;
+  color: #22a121;
+  padding: 2px;
+}
+.content-admin .pesanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.jenis-pesan {
+  font-size: 15px;
+  background-color: var(--primary1);
+  border-radius: 3px;
+  font-weight: 500;
+  color: var(--light1);
+  padding: 2px;
+}
+.no-pesan {
+  font-size: 15px;
+  background-color: #e7616195;
+  border-radius: 3px;
+  font-weight: 500;
+  color: var(--danger2);
+  padding: 2px;
+}
+/* custom datables */
+/* button datatables */
+/* excel */
+.dt-buttons {
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: row;
+}
+.dt-buttons .buttons-excel.buttons-html5 {
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.89);
+  background-color: var(--success);
+  border: 0;
+  color: var(--light);
+}
+.dt-buttons button.buttons-excel.buttons-html5:hover {
+  background-color: #21a121d6;
+  border: 0;
+  color: var(--light);
+}
+.dt-buttons .buttons-excel.buttons-html5:focus {
+  background-color: var(--success);
+  border: 0;
+  color: var(--light);
+}
+.dataTables_filter .dt-buttons .dt-button img {
+  width: 20px;
+  filter: brightness(-100%) invert(1);
+}
+/* pdf */
+.dt-buttons .dt-button.buttons-pdf {
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.89);
+  background-color: var(--danger);
+  border: 0;
+  color: var(--light);
+}
+.dt-buttons button.buttons-pdf.buttons-html5:hover {
+  background-color: #a13021d6;
+  border: 0;
+  color: var(--light);
+}
+.dt-buttons .buttons-excel.buttons-html5:focus {
+  background-color: var(--success);
+  border: 0;
+  color: var(--light);
+}
+.dataTables_filter .dt-buttons .dt-button img {
+  width: 20px;
+  filter: brightness(-100%) invert(1);
+  border-radius: 10px;
+}
+/* searching  datablase*/
+.dataTables_filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0px 15px;
+}
+.dataTables_filter label {
+  margin: 0;
+  transition: 500ms all ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.dataTables_filter input.search-active {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  width: 100%;
+  transition: 0.5s all ease;
+  padding: 5px 10px;
+}
+.dataTables_filter input[type="search"].input-search {
+  width: 0;
+  border: 0;
+  margin: 0;
+  position: relative;
+  border-radius: 4px;
+  right: 6px;
+  background-color: transparent;
+  transition: all 0.3s cubic-bezier(0.055, 0.6, 0.2, 1);
+}
+.dataTables_filter input[type="search"].input-search:focus {
+  box-shadow: 0px 0px 3px var(--primary1);
+}
+.dataTables_filter .btn-search {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  outline: none;
+}
+.dataTables_filter .btn-search:focus {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px var(--primary1);
+}
+.dataTables_filter .btn-search i {
+  color: var(--dark1);
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.dataTables_info {
+  margin: 0px 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.dataTables_paginate {
+  margin: 0px 55px;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.dataTables_paginate ul.paginate {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0px 10px;
+}
+/* Label entry datatable */
+#TableAdmin_wrapper #TableAdmin_length label {
+  margin: 0px 15px;
+}
+/* filter data */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--primary1);
+}
+.page-item.active .page-link {
+  background-color: var(--primary1);
+}
+.page-link {
+  color: var(--primary1);
+}
+/* all kategory */
+.action button {
+  border: 0;
+  background-color: var(--light1);
+  color: var(--dark1);
+  font-weight: 600;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+}
+.action button:active {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+}
+.action button:focus {
+  outline: 2px solid rgba(75, 106, 241, 0.491);
+}
+/* btn add -customer */
+.btn-add-ctm {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  padding: 6px 10px;
+  background-color: var(--primary1);
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 0px 10px;
+}
+.btn-add-ctm:focus {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  background-color: var(--primary1);
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px var(--primary1);
+  outline: 1px solid var(--primary1);
+}
+.item-dropdown-menu {
+  background-color: var(--light1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  transition: 0.3s;
+  display: none;
+}
+.item-dropdown-menu a {
+  padding: 4px;
+  /* margin: 1px; */
+  width: 100%;
+  text-align: center;
+  color: var(--dark1);
+  border-radius: 5px;
+  font-size: 13px;
+}
+.item-dropdown-menu a:hover {
+  color: var(--primary1);
+  background-color: var(--dark1);
+}
+.item-dropdown-menu a.active {
+  color: var(--primary1);
+  background-color: var(--dark1);
+}
+
+/* dropdown pembayran */
+.item-dropdown-menu-pembayaran {
+  background-color: var(--light1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  transition: 0.3s;
+  display: none;
+}
+.item-dropdown-menu-pembayaran a {
+  padding: 4px;
+  width: 100%;
+  text-align: center;
+  color: var(--dark1);
+  border-radius: 5px;
+  font-size: 13px;
+}
+.item-dropdown-menu-pembayaran a:hover {
+  color: var(--primary1);
+  background-color: var(--dark1);
+}
+.item-dropdown-menu-pembayaran a.active {
+  color: var(--primary1);
+  background-color: var(--dark1);
+}
+
+/* dropdown Kategory */
+.item-dropdown-menu-kategori {
+  background-color: var(--light1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  transition: 0.3s;
+  display: none;
+}
+.item-dropdown-menu-kategori a {
+  padding: 4px;
+  width: 100%;
+  text-align: center;
+  color: var(--dark1);
+  border-radius: 5px;
+  font-size: 13px;
+}
+.item-dropdown-menu-kategori a:hover {
+  color: var(--primary1);
+  background-color: var(--dark1);
+}
+.item-dropdown-menu-kategori a.active {
+  color: var(--primary1);
+  background-color: var(--dark1);
+}
+/* ********************* dashboard admin css ********************* */
+@media screen and (max-width: 768px) {
+  .sidebar-admin {
+    left: -220px;
+  }
+  .topbar-admin {
+    padding: 10px;
+  }
+  .topbar-admin-container {
+    gap: 10px;
+  }
+  .logo {
+    display: none;
+  }
+  .topbar-admin .topbar-logo .logo {
+    display: none;
+  }
+  .topbar-admin .topbar-back img {
+    width: 15px;
+  }
+  .content-admin {
+    margin-left: 0;
+  }
+  .logout-parrent {
+    padding: 20px 10px;
+  }
+  /* form label */
+  form label {
+    font-size: 10px;
+  }
+  form .form-group input {
+    border: 2px solid var(--gray2);
+    padding: 0px 10px;
+  }
+  /* button */
+  .button .btn-admin {
+    padding: 0px 20px;
+  }
+  .button .btn-admin:focus {
+    box-shadow: none;
+    outline: 2px double var(--primary1);
+    font-size: 14px;
+  }
+  .button .btn-admin:hover {
+    color: var(--dark2);
+    background: var(--gray1);
+    box-shadow: inset 0 0 0 0 var(--gray1);
+  }
+  .button .btn-admin-1 {
+    padding: 10px 30px;
+  }
+  .button .btn-admin-1:focus {
+    box-shadow: none;
+    outline: 2px double var(--primary1);
+  }
+  .button .btn-admin-1:hover {
+    color: var(--dark2);
+    box-shadow: inset 0 0 0 0 var(--gray1);
+  }
+  .content-admin .judul-page {
+    padding: 15px 20px;
+  }
+  .content-admin .judul-page img {
+    width: 30px;
+  }
+  .judul-page h3,
+  .judul-page h3.page {
+    font-size: 16px;
+    margin: 0;
+  }
+  .judul-page h3.page {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dt-buttons {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 0px 10px;
+  }
+  .dataTables_filter {
+    margin: 0px 2px;
+  }
+  .dataTables_info {
+    margin: 0px 5px;
+    float: left;
+  }
+  .dataTables_paginate {
+    margin: 0px 0px;
+    bottom: -40px;
+  }
+  .dataTables_paginate ul.paginate {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-admin .card-admin-total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-admin .card-admin-total a {
+    width: 300px;
+    padding: 5px 10px;
+    flex-direction: column;
+  }
+  .content-admin .card-admin-total a > .bg-banner:first-child {
+    padding: 5px 50px;
+    background-color: var(--primary1);
+  }
+  .content-admin .card-admin-total h6 {
+    padding: 0px;
+    color: var(--light1);
+  }
+  /*entry datatables */
+  #TableAdmin_wrapper #TableAdmin_length {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  #TableAdmin_wrapper #TableAdmin_length label {
+    margin: 0;
+  }
+}

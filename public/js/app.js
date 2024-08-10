@@ -1,0 +1,19 @@
+// app.js
+import "./admin/admin.js";
+import "./admin/crud/customers/insert.js";
+import "./admin/crud/customers/edit.js";
+import "./admin/crud/customers/delete.js";
+import "./admin/crud/customers/edit_status.js";
+import "./admin/crud/pemesanan/edit.js";
+import "./admin/crud/pemesanan/tambah.js";
+import "./admin/crud/pembayaran/edit.js";
+import "./admin/cetak.js";
+import "./login/login.js";
+import "./login/logout.js";
+import "./login/register.js";
+import "./user/profile.js";
+import "./user/edit.js";
+import "./main.js";
+import "./firebash/script.js";
+import "./mailer/contact.js";
+// import "./notif/notif.js";
