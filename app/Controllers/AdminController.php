@@ -551,6 +551,7 @@ class AdminController extends BaseController
 		}
 		$data_masuk['prosess'] = "di prosess";
 		[$inputs, $errors] = $this->filter($data_masuk, $fields, self::MESSAGE_ADD);
+			
 		if ($errors) {
 			$response = [
 				'status' => 400,

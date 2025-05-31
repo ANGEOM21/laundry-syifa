@@ -24,7 +24,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="<?= BASEURL; ?>/admin/sudahbayar" class=" d-flex align-items-center p-1 rounded-lg col col-lg-3">
+		<a href="<?= BASEURL; ?>/admin/sudah-bayar" class=" d-flex align-items-center p-1 rounded-lg col col-lg-3">
 			<div class="bg-banner shadow d-flex flex-column align-items-center py-3">
 				<div class="d-flex align-items-center border-bottom mb-0">
 					<h6 class="ml-2 p-md-2 text-white">Total sudah bayar</h6>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="<?= BASEURL; ?>/admin/bayar" class=" d-flex align-items-center p-1 rounded-lg col col-lg-3">
+		<a href="<?= BASEURL; ?>/admin/belum-bayar" class=" d-flex align-items-center p-1 rounded-lg col col-lg-3">
 			<div class="bg-banner shadow d-flex flex-column align-items-center py-3">
 				<div class="d-flex align-items-center border-bottom mb-0">
 					<h6 class="ml-2 p-md-2 text-white">Total belum bayar</h6>
