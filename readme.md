@@ -107,23 +107,22 @@ php run.php
 <table>
   <tr>
     <td align="center">
-      <img src="./public/img/users/tim/ILHAM.jpg" width="100" height="100" style="border-radius: 50%; object-fit: cover;" alt="Ilham Abi Gumelar"/><br />
+      <img src="./public/img/users/tim/ILHAM.jpg" width="100" height="100" alt="Ilham Abi Gumelar"/><br />
       <b>Ilham Abi Gumelar</b><br />
       <i>UI/UX Designer</i>
     </td>
     <td align="center">
-      <img src="./public/img/users/tim/FIRMAN.jpg" width="100" height="100" style="border-radius: 50%; object-fit: cover;" alt="Firmansyah Maulana"/><br />
+      <img src="./public/img/users/tim/FIRMAN.jpg" width="100" height="100" alt="Firmansyah Maulana"/><br />
       <b>Firmansyah Maulana</b><br />
       <i>Quality Assurance</i>
     </td>
     <td align="center">
-      <img src="./public/img/users/tim/FAHMI_IDRIS.jpg" width="100" height="100" style="border-radius: 50%; object-fit: cover;" alt="Fahmi Idris Anjounghan"/><br />
+      <img src="./public/img/users/tim/FAHMI_IDRIS.jpg" width="100" height="100" alt="Fahmi Idris Anjounghan"/><br />
       <b>Fahmi Idris Anjounghan</b><br />
       <i>Fullstack Developer</i>
     </td>
   </tr>
 </table>
-
 
 
 ---
