@@ -83,7 +83,7 @@
 
   overflow: hidden;
 
-  background: linear-gradient(#03a7cd), url("./../img/banner/banner.webp");
+  /* background: url("./../img/banner/banner.webp"); */
 
   background-position: center;
 
