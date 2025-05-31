@@ -104,20 +104,20 @@ php run.php
 
 ## 👨‍💻 Development Team
 
-<table>
+<table align="center">
   <tr>
     <td align="center">
-      <img src="./public/img/users/tim/ILHAM.jpg" width="100" height="100" alt="Ilham Abi Gumelar"/><br />
+      <img src="./public/img/users/tim/ILHAM.png" width="100" height="100" alt="Ilham Abi Gumelar"/><br />
       <b>Ilham Abi Gumelar</b><br />
       <i>UI/UX Designer</i>
     </td>
     <td align="center">
-      <img src="./public/img/users/tim/FIRMAN.jpg" width="100" height="100" alt="Firmansyah Maulana"/><br />
+      <img src="./public/img/users/tim/FIRMAN.png" width="100" height="100" alt="Firmansyah Maulana"/><br />
       <b>Firmansyah Maulana</b><br />
       <i>Quality Assurance</i>
     </td>
     <td align="center">
-      <img src="./public/img/users/tim/FAHMI_IDRIS.jpg" width="100" height="100" alt="Fahmi Idris Anjounghan"/><br />
+      <img src="./public/img/users/tim/FAHMI_IDRIS.png" width="100" height="100" alt="Fahmi Idris Anjounghan"/><br />
       <b>Fahmi Idris Anjounghan</b><br />
       <i>Fullstack Developer</i>
     </td>
